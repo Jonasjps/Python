@@ -1,5 +1,5 @@
-x = (input('Digite um número inteiro: '))
-y = (input('Digite outro número intero: '))
+x = int(input('Digite um número inteiro: '))
+y = int(input('Digite outro número intero: '))
 
 res = 'O resultado da soma de {} com {} é {}.'.format(x, y, x + y)
 print(res)
