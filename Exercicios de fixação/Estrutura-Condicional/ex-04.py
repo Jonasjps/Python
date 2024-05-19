@@ -27,8 +27,11 @@
 #     for j in range (10, 20, 2) :
 #         print('{} + {} = {}'.format(i, j, i + j))
 
-x = int(input('Digite um valor no intervalo de -100 até 100: '))
+# x = int(input('Digite um valor no intervalo de -100 até 100: '))
 
-while (x < 99 and x > -99) : 
-    x = int(input('Digite um valor no intervalo de -100 até 100: '))
-print('Encerrado...')
+# while (x > 100 and x < -100) : 
+#     x = int(input('Digite um valor no intervalo de -100 até 100: '))
+# print('Encerrado...')
+
+for i in range(88, -1, -4):
+    print(i)
