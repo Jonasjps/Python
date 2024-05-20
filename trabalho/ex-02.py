@@ -65,8 +65,14 @@ sabor_tamanho(sabor,tamanho)
 cont_pedido = input('Você deseja mais alguma coisa? (S/N):')
 
 if(cont_pedido == 'S'.lower()):
-    novo_sabor = input('Entre com sabor desejado (CP/AC):')
-    novo_tamanho = input('Entre com o tamanho desejado (P/M/G):')
+    while True :
+        novo_sabor = input('Entre com sabor desejado (CP/AC):')
+        if(novo_sabor != 'CP'.lower and novo_sabor != 'AC'.lower): 
+            print('Sabor inválido. Tente novamente.')
+            
+        else:
+            novo_tamanho = input('Entre com o tamanho desejado (P/M/G):')
+            break
     sabor_tamanho(novo_sabor,novo_tamanho)
     cont_pedido = input('Você deseja mais alguma coisa? (S/N):')
 if(cont_pedido == 'N'.lower()):
