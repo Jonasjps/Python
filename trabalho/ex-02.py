@@ -10,9 +10,10 @@ def mostrar_menu() :
 
 mostrar_menu()
 
+somar = 0
+
 sabor = input('Entre com sabor desejado (CP/AC):')
 tamanho = input('Entre com o tamanho desejado (P/M/G):')
-somar = 0
 
 if (sabor == 'CP'.lower() and tamanho == 'P'.lower()):
     somar = somar * 9.00
@@ -22,19 +23,19 @@ elif (sabor == 'CP'.lower() and tamanho == 'M'.lower()):
         print(f'Você pedio um Cupuaçu no tamanho P: R$ 14.00')
 elif (sabor == 'CP'.lower() and tamanho == 'G'.lower()):
     somar = somar * 18.00
-    print(f'Você pedio um Cupuaçu no tamanho P: R$ 18.00')
+    print(f'Você pedio um Cupuaçu no tamanho P: R$ 18.00') 
 else:
     print('Tamanho inválido. Tente novamente.')
-    
-        
 
 cont_pedido = input('Você deseja mais alguma coisa? (S/N):')
 
 if(cont_pedido == 'S'.lower()):
     novo_sabor = input('Entre com sabor desejado (CP/AC):')
     novo_tamanho = input('Entre com o tamanho desejado (P/M/G):')
-else:
+    cont_pedido = input('Você deseja mais alguma coisa? (S/N):')
+if(cont_pedido == 'N'.lower()):
     print(f'O valor total a ser pago: {somar}')
+
 
 
 # if mostrar_menu() == 'CP'.upper():
