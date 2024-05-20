@@ -6,9 +6,9 @@ qtd = int(input('Entre com a quantidade do produto:'))
 valor_total = valor_produto * qtd # calcula o valor total da compra sem o desconto.
 
 if valor_total < 2500 : # verifica se o valor da compra é menor que 2500.
+  
 
     desconto = valor_total - (valor_total * 0 /100) # calcula o valor da compra já com o desconto.
-
     print(f'O valor SEM desconto: {valor_total}') #valor SEM desconto 
     print(f'O valor COM desconto: {desconto} {" " * 10} Desconto de 0% aplicado para valor total menor que 2500. \n {" "*43}Para obter descontos faça uma compra maior que 2500. ')    #valor COM desconto
 
