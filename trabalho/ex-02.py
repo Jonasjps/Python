@@ -15,7 +15,7 @@ somar = 0
 while True :
     sabor = input('Entre com sabor desejado (CP/AC):')#fazer um condiçao para verificar se o sabor é o certo.
 
-    if(sabor != 'CP'.lower() or sabor != 'AC'.lower()):
+    if(sabor != 'CP'.lower() and sabor != 'AC'.lower()):
         print('Sabor inválido. Tente novamente.')
         continue  
     else:
