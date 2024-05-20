@@ -15,18 +15,13 @@ somar = 0
 while True :
     sabor = input('Entre com sabor desejado (CP/AC):')#fazer um condiçao para verificar se o sabor é o certo.
 
-    if(sabor != 'CP' and sabor != 'AC'):
+    if(sabor != 'CP' or sabor != 'AC'):
         print('Sabor inválido. Tente novamente.')
         continue  
     else:
         tamanho = input('Entre com o tamanho desejado (P/M/G):')    
         break
          
-
-
-         
-         
-
 
 def sabor_tamanho(sabor, tamanho):
 
